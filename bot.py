@@ -94,7 +94,7 @@ async def loginHandler(c: Client, m: Message):
     if user.user_id == int(Config.OWNER):
         user.allowed = True
     if user.allowed:
-        await m.reply_text(text=f"**Dont Spam**\n  ⚡ You can use me!!", quote=True)
+        await m.reply_text(text=f"**Do not Spam**\n  ⚡ You can use me!!", quote=True)
     else:
         try:
             passwd = m.text.split(" ", 1)[1]
